@@ -1,4 +1,4 @@
-public class Accounts extends fflib_SObjectDomain {
+public class Accounts {
 
     public Accounts(List<Account> sObjectList) {
         super(sObjectList);
@@ -9,6 +9,7 @@ public class Accounts extends fflib_SObjectDomain {
             return new Accounts(sObjectList);
         }
     }
+    public void newMethod(){}
     
     public override void onBeforeInsert() {
         List<Account> newAccounts = new List<Account>();
